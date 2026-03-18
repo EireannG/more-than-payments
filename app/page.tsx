@@ -13,14 +13,14 @@ export default function HomePage() {
             right card and payment solutions.
           </p>
           <p>
-  Email:{" "}
-  <a
-    href="mailto:hello@morethanpayments.com"
-    className="underline underline-offset-4"
-  >
-    hello@morethanpayments.com
-  </a>
-</p>
+            Email:
+            <a
+              href="mailto:hello@morethanpayments.com"
+              className="ml-1 underline underline-offset-4"
+            >
+              hello@morethanpayments.com
+            </a>
+          </p>
         </div>
       </section>
     </main>
