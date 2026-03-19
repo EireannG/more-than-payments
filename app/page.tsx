@@ -1,75 +1,112 @@
 export default function HomePage() {
   return (
     <main className="page">
-      <section className="wrap">
-        
-        {/* HERO */}
-        <h1 className="title">
-          Smarter Payment Solutions for UK & Ireland Businesses
-        </h1>
-        <p className="subtitle">
-          Reduce costs. Improve cashflow. Get the right payment setup.
-        </p>
-
-        <div style={{ marginTop: "30px" }}>
-          <a
-            href="mailto:hello@morethanpayments.com"
-            style={{
-              display: "inline-block",
-              padding: "12px 24px",
-              background: "#0f172a",
-              color: "white",
-              textDecoration: "none",
-              borderRadius: "6px",
-              fontWeight: "600",
-            }}
-          >
-            Get a Free Review
-          </a>
-        </div>
-
-        {/* SERVICES */}
-        <div style={{ marginTop: "80px" }}>
-          <h2 style={{ fontSize: "28px", marginBottom: "20px" }}>
-            What We Do
-          </h2>
-
-          <ul style={{ lineHeight: "2" }}>
-            <li>✔ Payment cost reviews & savings</li>
-            <li>✔ Card & merchant provider setup</li>
-            <li>✔ Cashflow optimisation</li>
-          </ul>
-        </div>
-
-        {/* WHY US */}
-        <div style={{ marginTop: "80px" }}>
-          <h2 style={{ fontSize: "28px", marginBottom: "20px" }}>
-            Why More Than Payments
-          </h2>
-
-          <ul style={{ lineHeight: "2" }}>
-            <li>✔ UK & Ireland specialists</li>
-            <li>✔ Independent advice (no bias)</li>
-            <li>✔ Focused on saving you money</li>
-          </ul>
-        </div>
-
-        {/* CONTACT */}
-        <div style={{ marginTop: "80px" }}>
-          <h2 style={{ fontSize: "28px", marginBottom: "10px" }}>
-            Get in touch
-          </h2>
-
-          <p>
-            Email:{" "}
-            <a href="mailto:hello@morethanpayments.com">
-              hello@morethanpayments.com
-            </a>
+      <section className="hero">
+        <div className="wrap">
+          <div className="eyebrow">UK &amp; Ireland payment specialists</div>
+          <h1 className="title">
+            Smarter payment solutions for growing businesses.
+          </h1>
+          <p className="subtitle">
+            We help businesses reduce payment costs, improve cashflow, and choose
+            the right card and payment setup for how they actually trade.
           </p>
-        </div>
 
+          <div className="hero-actions">
+            <a
+              href="mailto:hello@morethanpayments.com?subject=Free%20Payment%20Review"
+              className="btn btn-primary"
+            >
+              Get a free review
+            </a>
+            <a href="mailto:hello@morethanpayments.com" className="btn btn-secondary">
+              Email us
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="wrap">
+          <div className="section-heading">
+            <h2>What we do</h2>
+            <p>
+              Practical support for businesses that want better value, clearer
+              advice, and payment solutions that fit their operation.
+            </p>
+          </div>
+
+          <div className="card-grid">
+            <div className="card">
+              <h3>Payment cost reviews</h3>
+              <p>
+                We review your current setup, charges, and provider terms to help
+                identify opportunities to reduce costs.
+              </p>
+            </div>
+
+            <div className="card">
+              <h3>Card &amp; merchant solutions</h3>
+              <p>
+                Guidance on card machines, merchant services, and payment options
+                that work for your business model.
+              </p>
+            </div>
+
+            <div className="card">
+              <h3>Cashflow support</h3>
+              <p>
+                Better payment processes can improve speed of collection, reduce
+                friction, and strengthen day-to-day cashflow.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-alt">
+        <div className="wrap two-col">
+          <div>
+            <h2>Why More Than Payments</h2>
+            <p className="body-copy">
+              Too many providers overcomplicate things or bury the important
+              detail. We keep it straightforward, commercial, and focused on what
+              matters most to your business.
+            </p>
+          </div>
+
+          <div className="check-list">
+            <div className="check-item">UK &amp; Ireland market focus</div>
+            <div className="check-item">Clear, practical advice</div>
+            <div className="check-item">Commercial focus on value and fit</div>
+            <div className="check-item">Straightforward support from first conversation</div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="wrap cta-box">
+          <div>
+            <h2>Ready to review your payment setup?</h2>
+            <p>
+              Start with a straightforward conversation about your current costs,
+              provider, and what better could look like.
+            </p>
+          </div>
+
+          <div className="cta-actions">
+            <a
+              href="mailto:hello@morethanpayments.com?subject=Website%20Enquiry"
+              className="btn btn-primary"
+            >
+              Contact us
+            </a>
+            <div className="contact-line">
+              hello@morethanpayments.com
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   );
-  
 }
