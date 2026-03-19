@@ -2,6 +2,25 @@ import Image from "next/image";
 export default function HomePage() {
   return (
     <main className="page">
+       {/* HEADER */}
+  <header className="header">
+    <div className="wrap header-inner">
+      <Image
+        src="/logo.png"
+        alt="More Than Payments"
+        width={180}
+        height={50}
+        priority
+      />
+
+      <a
+        href="mailto:hello@morethanpayments.com"
+        className="btn btn-primary"
+      >
+        Contact
+      </a>
+    </div>
+  </header> 
       <section className="hero">
         <div className="wrap">
           <div className="eyebrow">UK &amp; Ireland payment specialists</div>
