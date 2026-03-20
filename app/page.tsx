@@ -8,9 +8,9 @@ export default function HomePage() {
       <Image
         src="/logo.png"
         alt="More Than Payments"
-        width={260}
-        height={80}
-        priority
+        width={300}
+        height={90}
+       style={{ opacity: 0.9 }}
       />
 
       <a
