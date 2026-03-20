@@ -93,7 +93,12 @@ a {
 
 .btn-primary {
   background: #0f172a;
-  color: #ffffff;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .btn-primary:hover {
