@@ -8,8 +8,8 @@ export default function HomePage() {
       <Image
         src="/logo.png"
         alt="More Than Payments"
-        width={180}
-        height={50}
+        width={260}
+        height={80}
         priority
       />
 
