@@ -453,30 +453,6 @@ export default function MoreThanPaymentsHomepage() {
         </div>
       </section>
 
-      <section id="about" style={styles.section}>
-        <div style={styles.sectionGrid}>
-          <div>
-            <div style={styles.sectionLabel}>About Us</div>
-            <h2 style={styles.h2}>Practical payment guidance for businesses that want better value.</h2>
-          </div>
-          <div style={styles.cardWhite}>
-            <p style={styles.bodyText}>
-              More Than Payments helps businesses review their current payment setup, understand where money may be leaking, and find smarter solutions through trusted providers and service partners.
-            </p>
-            <p style={styles.bodyTextSpaced}>
-              We keep things simple, commercial, and practical. No unnecessary jargon. No overcomplicated pitch. Just clear advice focused on cost, fit, and long-term value.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="solutions" style={styles.splitSection}>
-        <div style={styles.section}>
-          <div style={{ maxWidth: 760 }}>
-            <div style={styles.sectionLabel}>Solutions &amp; Partners</div>
-            <h2 style={styles.h2}>Straightforward support across the payment areas that matter most.</h2>
-          </div>
-
           <div style={styles.solutionGrid}>
             {solutions.map((item) => (
               <div key={item.title} style={styles.card}>
@@ -497,37 +473,7 @@ export default function MoreThanPaymentsHomepage() {
         </div>
       </section>
 
-      <section id="help" style={styles.section}>
-        <div style={styles.helpGrid}>
-          <div>
-            <div style={styles.sectionLabel}>How We Can Help</div>
-            <h2 style={styles.h2}>Clear, useful support without the hard sell.</h2>
-            <p style={styles.bodyTextSpaced}>
-              Whether you are reviewing costs, changing provider, or simply want a second opinion, we help you move forward with more clarity and less wasted time.
-            </p>
-          </div>
-
-          <div style={styles.helpList}>
-            {helpPoints.map((item) => (
-              <div key={item} style={styles.helpItem}>
-                <div style={styles.check}>✓</div>
-                <div style={{ fontSize: 17, lineHeight: 1.7, color: "#334155", fontWeight: 600 }}>{item}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" style={styles.contactSection}>
-        <div style={styles.contactGrid}>
-          <div>
-            <div style={{ ...styles.sectionLabel, color: "#94a3b8" }}>Contact</div>
-            <h2 style={{ ...styles.h2, color: "#fff" }}>Ready to talk through your current payment setup?</h2>
-            <p style={styles.contactText}>
-              Get in touch for a straightforward conversation about your current provider, your costs, and the options available to your business.
-            </p>
-          </div>
-
+    
           <div style={styles.formWrap}>
             <form style={styles.form}>
               <div>
