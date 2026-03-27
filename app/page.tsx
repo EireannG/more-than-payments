@@ -5,7 +5,7 @@ export default function MoreThanPaymentsHomepage() {
     { label: "About Us", href: "#about" },
     { label: "Solutions & Partners", href: "#solutions" },
     { label: "How We Can Help", href: "#help" },
-    { label: "Contact", href: "#contact" },
+    
   ];
 
   const partnerAreas = [
