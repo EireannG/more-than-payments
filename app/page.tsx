@@ -2,11 +2,10 @@ import type { CSSProperties } from "react";
 
 export default function MoreThanPaymentsHomepage() {
   const navItems = [
-    { label: "About Us", href: "#about" },
-    { label: "Solutions & Partners", href: "#solutions" },
-    { label: "How We Can Help", href: "#help" },
-    
-  ];
+  { label: "About Us", href: "/about" },
+  { label: "Solutions & Partners", href: "/solutions-partners" },
+  { label: "How We Can Help", href: "/how-we-can-help" },
+];
 
   const partnerAreas = [
     "Card Terminals",
