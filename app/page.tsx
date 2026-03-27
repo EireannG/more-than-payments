@@ -1,3 +1,5 @@
+import type { CSSProperties } from "react";
+
 export default function MoreThanPaymentsHomepage() {
   const navItems = [
     { label: "About Us", href: "#about" },
@@ -43,7 +45,7 @@ export default function MoreThanPaymentsHomepage() {
     "Get practical advice without sales fluff",
   ];
 
-  const styles = {
+  const styles: Record<string, CSSProperties> = {
     page: {
       minHeight: "100vh",
       backgroundColor: "#f5f7fb",
