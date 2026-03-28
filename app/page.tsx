@@ -31,8 +31,8 @@ export default function MoreThanPaymentsHomepage() {
       display: "flex",
       alignItems: "center",
       justifyContent: "space-between",
-      padding: "18px 0",
-      gap: "20px",
+      padding: "14px 0",
+      gap: "12px",
       flexWrap: "wrap",
     },
     brand: {
@@ -44,11 +44,11 @@ export default function MoreThanPaymentsHomepage() {
     nav: {
       display: "flex",
       alignItems: "center",
-      gap: "22px",
+      gap: "16px",
       flexWrap: "wrap",
     },
     navLink: {
-      fontSize: "15px",
+      fontSize: "14px",
       fontWeight: 700,
       color: "#334155",
       textDecoration: "none",
@@ -101,7 +101,7 @@ export default function MoreThanPaymentsHomepage() {
     },
     primaryBtn: {
       display: "inline-block",
-      padding: "16px 24px",
+      padding: "12px 18px",
       borderRadius: "18px",
       backgroundColor: "#020617",
       color: "#fff",
