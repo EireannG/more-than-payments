@@ -31,8 +31,8 @@ export default function MoreThanPaymentsHomepage() {
       display: "flex",
       alignItems: "center",
       justifyContent: "space-between",
-      padding: "16px 0",
-      gap: "20px",
+      padding: "10px 0", // 🔥 tightened
+      gap: "16px",
     },
     brand: {
       display: "flex",
@@ -44,11 +44,9 @@ export default function MoreThanPaymentsHomepage() {
     navWrap: {
       display: "flex",
       alignItems: "center",
-      gap: "18px",
+      gap: "16px",
       marginLeft: "auto",
-      marginRight: "18px",
-      flexWrap: "wrap",
-      justifyContent: "flex-end",
+      marginRight: "16px",
     },
     navLink: {
       fontSize: "14px",
@@ -59,14 +57,13 @@ export default function MoreThanPaymentsHomepage() {
     },
     contactBtn: {
       display: "inline-block",
-      padding: "12px 20px",
+      padding: "12px 18px",
       borderRadius: "18px",
       backgroundColor: "#020617",
       color: "#fff",
       fontWeight: 700,
       textDecoration: "none",
       whiteSpace: "nowrap",
-      flexShrink: 0,
     },
     hero: {
       backgroundColor: "#fff",
@@ -159,6 +156,7 @@ export default function MoreThanPaymentsHomepage() {
     <main style={styles.page}>
       <header style={styles.header}>
         <div style={{ ...styles.container, ...styles.headerInner }}>
+          {/* LOGO */}
           <a href="/" style={styles.brand}>
             <Image
               src="/logo.png"
@@ -166,14 +164,16 @@ export default function MoreThanPaymentsHomepage() {
               width={540}
               height={120}
               style={{
-                width: "235px",
+                width: "200px", // 🔥 reduced
                 height: "auto",
                 display: "block",
+                lineHeight: 0,
               }}
               priority
             />
           </a>
 
+          {/* NAV */}
           <div style={styles.navWrap}>
             {navItems.map((item) => (
               <a key={item.label} href={item.href} style={styles.navLink}>
@@ -182,12 +182,14 @@ export default function MoreThanPaymentsHomepage() {
             ))}
           </div>
 
+          {/* CTA */}
           <a href="/contact" style={styles.contactBtn}>
             Contact
           </a>
         </div>
       </header>
 
+      {/* HERO */}
       <section style={styles.hero}>
         <div style={styles.heroGrid}>
           <div>
@@ -197,6 +199,7 @@ export default function MoreThanPaymentsHomepage() {
               We help businesses reduce payment costs, improve cashflow, and choose the
               right card and payment setup for how they actually trade.
             </p>
+
             <div style={styles.buttonRow}>
               <a href="/contact" style={styles.primaryBtn}>
                 Speak to Us
@@ -213,32 +216,23 @@ export default function MoreThanPaymentsHomepage() {
 
               <div style={{ marginTop: 24 }}>
                 <div>
-                  <div style={{ fontSize: 24, fontWeight: 800, color: "#020617" }}>
-                    Save money
-                  </div>
+                  <div style={{ fontSize: 24, fontWeight: 800 }}>Save money</div>
                   <p style={styles.smallText}>
-                    We identify where businesses may be overpaying and help them explore
-                    stronger-value payment options.
+                    We identify where businesses may be overpaying and help them explore stronger-value options.
                   </p>
                 </div>
 
                 <div style={{ marginTop: 24 }}>
-                  <div style={{ fontSize: 24, fontWeight: 800, color: "#020617" }}>
-                    Make sense of the market
-                  </div>
+                  <div style={{ fontSize: 24, fontWeight: 800 }}>Make sense of the market</div>
                   <p style={styles.smallText}>
-                    Merchant services can be confusing. We simplify the options and focus
-                    on what actually fits your business.
+                    Merchant services can be confusing. We simplify the options and focus on what fits.
                   </p>
                 </div>
 
                 <div style={{ marginTop: 24 }}>
-                  <div style={{ fontSize: 24, fontWeight: 800, color: "#020617" }}>
-                    Choose the right partners
-                  </div>
+                  <div style={{ fontSize: 24, fontWeight: 800 }}>Choose the right partners</div>
                   <p style={styles.smallText}>
-                    We work with trusted service partners to help businesses move forward
-                    with confidence.
+                    We connect you with trusted providers that actually suit your business.
                   </p>
                 </div>
               </div>
