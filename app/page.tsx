@@ -41,31 +41,6 @@ export default function MoreThanPaymentsHomepage() {
       textDecoration: "none",
       color: "inherit",
     },
-    logoBox: {
-      width: "52px",
-      height: "52px",
-      borderRadius: "18px",
-      border: "1px solid #e2e8f0",
-      backgroundColor: "#fff",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-      boxShadow: "0 2px 8px rgba(15,23,42,0.06)",
-      flexShrink: 0,
-    },
-    brandTitle: {
-      fontSize: "22px",
-      fontWeight: 800,
-      letterSpacing: "-0.02em",
-    },
-    brandSub: {
-      fontSize: "11px",
-      fontWeight: 700,
-      letterSpacing: "0.18em",
-      textTransform: "uppercase",
-      color: "#64748b",
-      marginTop: "3px",
-    },
     nav: {
       display: "flex",
       alignItems: "center",
@@ -170,10 +145,22 @@ export default function MoreThanPaymentsHomepage() {
       <header style={styles.header}>
         <div style={{ ...styles.container, ...styles.headerInner }}>
           <a href="/" style={styles.brand}>
-            <div style={styles.logoBox}>
+            <div
+              style={{
+                width: "44px",
+                height: "44px",
+                borderRadius: "12px",
+                border: "1px solid #e2e8f0",
+                backgroundColor: "#fff",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                flexShrink: 0,
+              }}
+            >
               <svg
                 viewBox="0 0 64 64"
-                style={{ width: 34, height: 34 }}
+                style={{ width: 28, height: 28 }}
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -193,17 +180,32 @@ export default function MoreThanPaymentsHomepage() {
                   strokeWidth="3"
                   strokeLinecap="round"
                 />
-                <path
-                  d="M48 14.5c6.4.6 11.5 6 11.5 12.6"
-                  stroke="currentColor"
-                  strokeWidth="3"
-                  strokeLinecap="round"
-                />
               </svg>
             </div>
-            <div>
-              <div style={styles.brandTitle}>MORE THAN PAYMENTS</div>
-              <div style={styles.brandSub}>UK &amp; Ireland Payment Specialists</div>
+
+            <div style={{ lineHeight: 1 }}>
+              <div
+                style={{
+                  fontSize: "20px",
+                  fontWeight: 800,
+                  letterSpacing: "-0.02em",
+                }}
+              >
+                MORE THAN PAYMENTS
+              </div>
+
+              <div
+                style={{
+                  fontSize: "10px",
+                  fontWeight: 700,
+                  letterSpacing: "0.2em",
+                  textTransform: "uppercase",
+                  color: "#64748b",
+                  marginTop: "4px",
+                }}
+              >
+                UK &amp; IRELAND PAYMENT SPECIALISTS
+              </div>
             </div>
           </a>
 
