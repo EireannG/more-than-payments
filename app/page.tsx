@@ -1,70 +1,7 @@
-import Image from "next/image";
 import type { CSSProperties } from "react";
 
 export default function MoreThanPaymentsHomepage() {
-  const navItems = [
-    { label: "About Us", href: "/about" },
-    { label: "Solutions & Partners", href: "/solutions-partners" },
-    { label: "How We Can Help", href: "/how-we-can-help" },
-  ];
-
   const styles: Record<string, CSSProperties> = {
-    page: {
-      minHeight: "100vh",
-      backgroundColor: "#f5f7fb",
-      color: "#0f172a",
-      fontFamily: "Arial, sans-serif",
-    },
-    header: {
-      position: "sticky",
-      top: 0,
-      zIndex: 30,
-      borderBottom: "1px solid #e2e8f0",
-      backgroundColor: "rgba(255,255,255,0.96)",
-    },
-    container: {
-      maxWidth: "1280px",
-      margin: "0 auto",
-      padding: "0 28px",
-    },
-    headerInner: {
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "space-between",
-      padding: "10px 0", // 🔥 tightened
-      gap: "16px",
-    },
-    brand: {
-      display: "flex",
-      alignItems: "center",
-      textDecoration: "none",
-      color: "inherit",
-      flexShrink: 0,
-    },
-    navWrap: {
-      display: "flex",
-      alignItems: "center",
-      gap: "16px",
-      marginLeft: "auto",
-      marginRight: "16px",
-    },
-    navLink: {
-      fontSize: "14px",
-      fontWeight: 700,
-      color: "#334155",
-      textDecoration: "none",
-      whiteSpace: "nowrap",
-    },
-    contactBtn: {
-      display: "inline-block",
-      padding: "12px 18px",
-      borderRadius: "18px",
-      backgroundColor: "#020617",
-      color: "#fff",
-      fontWeight: 700,
-      textDecoration: "none",
-      whiteSpace: "nowrap",
-    },
     hero: {
       backgroundColor: "#fff",
       borderBottom: "1px solid #e2e8f0",
@@ -153,57 +90,26 @@ export default function MoreThanPaymentsHomepage() {
   };
 
   return (
-    <main style={styles.page}>
-      <header style={styles.header}>
-        <div style={{ ...styles.container, ...styles.headerInner }}>
-          {/* LOGO */}
-          <a href="/" style={styles.brand}>
-            <Image
-              src="/logo.png"
-              alt="More Than Payments"
-              width={540}
-              height={120}
-              style={{
-                width: "200px", // 🔥 reduced
-                height: "auto",
-                display: "block",
-                lineHeight: 0,
-              }}
-              priority
-            />
-          </a>
-
-          {/* NAV */}
-          <div style={styles.navWrap}>
-            {navItems.map((item) => (
-              <a key={item.label} href={item.href} style={styles.navLink}>
-                {item.label}
-              </a>
-            ))}
-          </div>
-
-          {/* CTA */}
-          <a href="/contact" style={styles.contactBtn}>
-            Contact
-          </a>
-        </div>
-      </header>
-
-      {/* HERO */}
+    <main>
       <section style={styles.hero}>
         <div style={styles.heroGrid}>
           <div>
             <div style={styles.pill}>UK &amp; Ireland Payment Specialists</div>
-            <h1 style={styles.h1}>Smarter payment solutions for growing businesses.</h1>
+
+            <h1 style={styles.h1}>
+              Smarter payment solutions for growing businesses.
+            </h1>
+
             <p style={styles.lead}>
-              We help businesses reduce payment costs, improve cashflow, and choose the
-              right card and payment setup for how they actually trade.
+              We help businesses reduce payment costs, improve cashflow, and
+              choose the right card and payment setup for how they actually trade.
             </p>
 
             <div style={styles.buttonRow}>
               <a href="/contact" style={styles.primaryBtn}>
                 Speak to Us
               </a>
+
               <a href="/how-we-can-help" style={styles.secondaryBtn}>
                 See How We Can Help
               </a>
@@ -212,27 +118,38 @@ export default function MoreThanPaymentsHomepage() {
 
           <div>
             <div style={styles.card}>
-              <div style={styles.sectionLabel}>Why businesses come to us</div>
+              <div style={styles.sectionLabel}>
+                Why businesses come to us
+              </div>
 
               <div style={{ marginTop: 24 }}>
                 <div>
-                  <div style={{ fontSize: 24, fontWeight: 800 }}>Save money</div>
+                  <div style={{ fontSize: 24, fontWeight: 800 }}>
+                    Save money
+                  </div>
                   <p style={styles.smallText}>
-                    We identify where businesses may be overpaying and help them explore stronger-value options.
+                    We identify where businesses may be overpaying and help them
+                    explore stronger-value payment options.
                   </p>
                 </div>
 
                 <div style={{ marginTop: 24 }}>
-                  <div style={{ fontSize: 24, fontWeight: 800 }}>Make sense of the market</div>
+                  <div style={{ fontSize: 24, fontWeight: 800 }}>
+                    Make sense of the market
+                  </div>
                   <p style={styles.smallText}>
-                    Merchant services can be confusing. We simplify the options and focus on what fits.
+                    Merchant services can be confusing. We simplify the options
+                    and focus on what actually fits your business.
                   </p>
                 </div>
 
                 <div style={{ marginTop: 24 }}>
-                  <div style={{ fontSize: 24, fontWeight: 800 }}>Choose the right partners</div>
+                  <div style={{ fontSize: 24, fontWeight: 800 }}>
+                    Choose the right partners
+                  </div>
                   <p style={styles.smallText}>
-                    We connect you with trusted providers that actually suit your business.
+                    We work with trusted service partners to help businesses move
+                    forward with confidence.
                   </p>
                 </div>
               </div>
