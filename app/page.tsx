@@ -20,50 +20,65 @@ export default function MoreThanPaymentsHomepage() {
       top: 0,
       zIndex: 30,
       borderBottom: "1px solid #e2e8f0",
-      backgroundColor: "rgba(255,255,255,0.95)",
+      backgroundColor: "rgba(255,255,255,0.96)",
     },
     container: {
-      maxWidth: "1200px",
+      maxWidth: "1280px",
       margin: "0 auto",
-      padding: "0 24px",
+      padding: "0 28px",
     },
     headerInner: {
       display: "flex",
       alignItems: "center",
       justifyContent: "space-between",
-      padding: "14px 0",
-      gap: "12px",
-      flexWrap: "wrap",
+      padding: "16px 0",
+      gap: "20px",
     },
     brand: {
       display: "flex",
       alignItems: "center",
       textDecoration: "none",
       color: "inherit",
+      flexShrink: 0,
     },
-    nav: {
+    navWrap: {
       display: "flex",
       alignItems: "center",
-      gap: "16px",
+      gap: "18px",
+      marginLeft: "auto",
+      marginRight: "18px",
       flexWrap: "wrap",
+      justifyContent: "flex-end",
     },
     navLink: {
       fontSize: "14px",
       fontWeight: 700,
       color: "#334155",
       textDecoration: "none",
+      whiteSpace: "nowrap",
+    },
+    contactBtn: {
+      display: "inline-block",
+      padding: "12px 20px",
+      borderRadius: "18px",
+      backgroundColor: "#020617",
+      color: "#fff",
+      fontWeight: 700,
+      textDecoration: "none",
+      whiteSpace: "nowrap",
+      flexShrink: 0,
     },
     hero: {
       backgroundColor: "#fff",
       borderBottom: "1px solid #e2e8f0",
     },
     heroGrid: {
-      maxWidth: "1200px",
+      maxWidth: "1280px",
       margin: "0 auto",
-      padding: "72px 24px",
+      padding: "72px 28px",
       display: "grid",
-      gridTemplateColumns: "1.15fr 0.85fr",
-      gap: "48px",
+      gridTemplateColumns: "1.1fr 0.9fr",
+      gap: "56px",
       alignItems: "start",
     },
     pill: {
@@ -101,7 +116,7 @@ export default function MoreThanPaymentsHomepage() {
     },
     primaryBtn: {
       display: "inline-block",
-      padding: "12px 18px",
+      padding: "16px 24px",
       borderRadius: "18px",
       backgroundColor: "#020617",
       color: "#fff",
@@ -151,7 +166,7 @@ export default function MoreThanPaymentsHomepage() {
               width={540}
               height={120}
               style={{
-                width: "340px",
+                width: "235px",
                 height: "auto",
                 display: "block",
               }}
@@ -159,15 +174,15 @@ export default function MoreThanPaymentsHomepage() {
             />
           </a>
 
-          <nav style={styles.nav}>
+          <div style={styles.navWrap}>
             {navItems.map((item) => (
               <a key={item.label} href={item.href} style={styles.navLink}>
                 {item.label}
               </a>
             ))}
-          </nav>
+          </div>
 
-          <a href="/contact" style={styles.primaryBtn}>
+          <a href="/contact" style={styles.contactBtn}>
             Contact
           </a>
         </div>
