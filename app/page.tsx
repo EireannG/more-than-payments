@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { CSSProperties } from "react";
 
 export default function MoreThanPaymentsHomepage() {
@@ -37,7 +38,6 @@ export default function MoreThanPaymentsHomepage() {
     brand: {
       display: "flex",
       alignItems: "center",
-      gap: "14px",
       textDecoration: "none",
       color: "inherit",
     },
@@ -145,68 +145,18 @@ export default function MoreThanPaymentsHomepage() {
       <header style={styles.header}>
         <div style={{ ...styles.container, ...styles.headerInner }}>
           <a href="/" style={styles.brand}>
-            <div
+            <Image
+              src="/logo.png"
+              alt="More Than Payments"
+              width={540}
+              height={120}
               style={{
-                width: "44px",
-                height: "44px",
-                borderRadius: "12px",
-                border: "1px solid #e2e8f0",
-                backgroundColor: "#fff",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                flexShrink: 0,
+                width: "340px",
+                height: "auto",
+                display: "block",
               }}
-            >
-              <svg
-                viewBox="0 0 64 64"
-                style={{ width: 28, height: 28 }}
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M10 33c0-2.2 1.8-4 4-4h25c2.2 0 4 1.8 4 4v14H14c-2.2 0-4-1.8-4-4V33Z"
-                  stroke="currentColor"
-                  strokeWidth="3"
-                />
-                <path
-                  d="M22 24l20-8c2.1-.8 4.5.2 5.3 2.3l1.6 4.2-26.9 10.4V24Z"
-                  stroke="currentColor"
-                  strokeWidth="3"
-                />
-                <path
-                  d="M44 20c4.2.4 7.5 3.9 7.5 8.2"
-                  stroke="currentColor"
-                  strokeWidth="3"
-                  strokeLinecap="round"
-                />
-              </svg>
-            </div>
-
-            <div style={{ lineHeight: 1 }}>
-              <div
-                style={{
-                  fontSize: "20px",
-                  fontWeight: 800,
-                  letterSpacing: "-0.02em",
-                }}
-              >
-                MORE THAN PAYMENTS
-              </div>
-
-              <div
-                style={{
-                  fontSize: "10px",
-                  fontWeight: 700,
-                  letterSpacing: "0.2em",
-                  textTransform: "uppercase",
-                  color: "#64748b",
-                  marginTop: "4px",
-                }}
-              >
-                UK &amp; IRELAND PAYMENT SPECIALISTS
-              </div>
-            </div>
+              priority
+            />
           </a>
 
           <nav style={styles.nav}>
